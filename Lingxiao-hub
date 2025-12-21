@@ -303,6 +303,13 @@ Tabs.GeneralTab:Button({
     end
 })
 
+Tabs.GeneralTab:Button({
+    Title = "Min（舊版本min 畫面會模糊）",
+    Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Min/refs/heads/main/MinXoE"))()
+    end
+})
+
 -- 神刀标签页
 local Settings = {AutoClick = true, ClickDelay = 0.3}
 local _G = _G or getfenv(0)._G
