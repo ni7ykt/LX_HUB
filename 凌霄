@@ -171,7 +171,7 @@ Window:SelectTab(1)
 -- 公告标签页
 Tabs.NoticeTab:Paragraph({
     Title = "凌霄脚本",
-    Desc = "初音制作\n脚本测试中",
+    Desc = "初音制作\n有些功能壞了用不了，對不起我們儘快更改，謝謝。",
     Image = "info",
     ImageSize = 36,
     Buttons = {
