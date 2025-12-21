@@ -90,8 +90,8 @@ old = hookmetamethod(game:GetService("StarterGui"), "__namecall", newcclosure(fu
     if method == "SetCore" and args[1] == "SendNotification" then
         local options = args[2]
         if type(options) == "table" and 
-           tostring(options.Title) == "人挤人脚本" and 
-           tostring(options.Text) == "kismile制作" 
+           tostring(options.Title) == "凌霄脚本" and 
+           tostring(options.Text) == "初音製作" 
         then
             local modifiedOptions = table.clone(options)
             modifiedOptions.Text = "1"
@@ -149,7 +149,7 @@ do
     })
     
     Tabs.TPSection = Window:Section({
-        Title = "传送",
+        Title = "傳送",
         Icon = "map-pin",
         Opened = true,
     })
@@ -258,7 +258,7 @@ local function toggleAutoV4(enable)
 end
 
 Tabs.GeneralTab:Toggle({
-    Title = "自动v4",
+    Title = "自動v4",
     Value = false,
     Callback = function(IsEnabled)
         if not _G.ToggleStates then _G.ToggleStates = {} end
@@ -269,7 +269,7 @@ Tabs.GeneralTab:Toggle({
 })
 
 Tabs.GeneralTab:Button({
-    Title = "飞行",
+    Title = "飛行",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/kismile236/rjrym/refs/heads/main/fly.lua"))()
     end
@@ -293,6 +293,13 @@ Tabs.GeneralTab:Button({
     Title = "hoho",
     Callback = function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+    end
+})
+
+Tabs.GeneralTab:Button({
+    Title = "落叶中心（所有游戲通用）",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/krlpl/Deciduous-center-LS/main/落叶中心混淆.txt"))()
     end
 })
 
