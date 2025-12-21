@@ -271,14 +271,14 @@ Tabs.GeneralTab:Toggle({
 Tabs.GeneralTab:Button({
     Title = "飛行",
     Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/kismile236/rjrym/refs/heads/main/fly.lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ni7ykt/RGB-FLY/refs/heads/main/l"))()
     end
 })
 
 Tabs.GeneralTab:Button({
     Title = "法天象地",
     Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/kismile36/rjrzhongxing/refs/heads/main/rjr/fatianxiangdi"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ni7ykt/RGB-FLY/refs/heads/main/oa"))()
     end
 })
 
