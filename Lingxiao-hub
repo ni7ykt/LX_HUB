@@ -301,12 +301,19 @@ Tabs.GeneralTab:Button({
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/krlpl/Deciduous-center-LS/main/落叶中心混淆.txt"))()
     end
-})
+}) 
 
 Tabs.GeneralTab:Button({
     Title = "Min（舊版本min 畫面會模糊）",
     Callback = function()
        loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Min/refs/heads/main/MinXoE"))()
+    end
+})
+
+Tabs.GeneralTab:Button({
+    Title = "模仿版本redz",
+    Callback = function()
+        loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/20f318386e3fbf069ee3fa797cfc9f34.lua"))()
     end
 })
 
