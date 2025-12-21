@@ -311,9 +311,9 @@ Tabs.GeneralTab:Button({
 })
 
 Tabs.GeneralTab:Button({
-    Title = "模仿版本redz",
+    Title = "皮腳本",
     Callback = function()
-        loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/20f318386e3fbf069ee3fa797cfc9f34.lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/xiaopi77/xiaopi77/main/QQ1002100032-Roblox-Pi-script.lua"))()
     end
 })
 
