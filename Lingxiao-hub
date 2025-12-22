@@ -613,29 +613,3 @@ task.spawn(function()
     task.wait(2)
     UpdateAllESP()
 end)
-
--- 窗口关闭回调
-Window:OnClose(function()
-    print("凌霄 UI 已关闭")
-    
-    -- 清理ESP
-    if ESPConfig.MainSwitch then
-        for _, player in pairs(Players:GetPlayers()) do
-            if player ~= LocalPlayer then
-                CleanupPlayerESP(player)
-            end
-        end
-    end
-    
-    -- 清理移速
-    if getfenv().translateConnection then
-        getfenv().translateConnection:Disconnect()
-        getfenv().translateConnection = nil
-    end
-    
-    -- 清理自动v4
-    if autoV4Task then
-        task.cancel(autoV4Task)
-        autoV4Task = nil
-    end
-end)
