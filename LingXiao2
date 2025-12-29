@@ -50,13 +50,13 @@ Window:EditOpenButton({
 });
 local Tabs = {
     InfoTab = Window:Tab({
-        Title = "自动",
+        Title = "自動",
         Icon = "info",
         Desc = "Info Section"
     }),
     MainDivider = Window:Divider(),
     MainTab = Window:Tab({
-        Title = "项目",
+        Title = "項目",
         Icon = "rocket",
         Desc = "Main Section"
     }),
@@ -66,12 +66,12 @@ local Tabs = {
         Desc = "Farming Section"
     }),
     ItemsTab = Window:Tab({
-        Title = "项目",
+        Title = "項目",
         Icon = "box",
         Desc = "Items Section"
     }),
     SettingsTab = Window:Tab({
-        Title = "设置",
+        Title = "設置",
         Icon = "settings",
         Desc = "Settings Section"
     }),
@@ -82,13 +82,13 @@ local Tabs = {
         Desc = "Local Player Section"
     }),
     StatsTab = Window:Tab({
-        Title = "统计",
+        Title = "統計",
         Icon = "sliders-horizontal",
         Desc = "Stats Section"
     }),
     SeaDivider = Window:Divider(),
     SeaEventTab = Window:Tab({
-        Title = "海洋事件",
+        Title = "海上事件",
         Icon = "anchor",
         Desc = "Sea Event Section"
     }),
@@ -104,33 +104,33 @@ local Tabs = {
     }),
     AutoDivider = Window:Divider(),
     DragonDojoTab = Window:Tab({
-        Title = "龙道场",
+        Title = "龍道館",
         Icon = "shield",
         Desc = "Dragon Dojo Section"
     }),
     RaceTab = Window:Tab({
-        Title = "种族V4",
+        Title = "種族V4",
         Icon = "bot",
         Desc = "Race Section"
     }),
     CombatDivider = Window:Divider(),
     CombatTab = Window:Tab({
-        Title = "战斗",
+        Title = "PVP",
         Icon = "sword",
         Desc = "Combat Section"
     }),
     RaidTab = Window:Tab({
-        Title = "袭击",
+        Title = "襲擊",
         Icon = "door-open",
         Desc = "Raid Section"
     }),
     EspTab = Window:Tab({
-        Title = "透视",
+        Title = "透視",
         Icon = "eye",
         Desc = "Esp Section"
     }),
     TeleportTab = Window:Tab({
-        Title = "传送",
+        Title = "傳送",
         Icon = "map-pinned",
         Desc = "Teleport Section"
     }),
@@ -140,18 +140,18 @@ local Tabs = {
         Desc = "Shop Section"
     }),
     FruitTab = Window:Tab({
-        Title = "果实",
+        Title = "果實",
         Icon = "apple",
         Desc = "Fruit Section"
     }),
     MiscDivider = Window:Divider(),
     MiscTab = Window:Tab({
-        Title = "杂项",
+        Title = "雜項",
         Icon = "layout-grid",
         Desc = "Misc Section"
     }),
     ServerTab = Window:Tab({
-        Title = "服务器",
+        Title = "服務器",
         Icon = "server",
         Desc = "Server Section"
     })
