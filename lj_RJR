@@ -31,20 +31,20 @@ local win = ui:new("人挤人中心")
 local UITab1 = win:Tab("公告",'7734068321')
 local UITab2 = win:Tab("脚本",'7734068321')
 local UITab3 = win:Tab("神刀",'7734068321')
-local UITab4 = win:Tab("透视",'7734068321')
-local UITab5 = win:Tab("传送",'7734068321')
+local UITab4 = win:Tab("透視",'7734068321')
+local UITab5 = win:Tab("傳送",'7734068321')
 
 local about = UITab1:section("公告",true)
 
 about:Label("kismile制作")
-about:Label("脚本测试中")
+about:Label("脚本測試中")
 local about = UITab2:section("脚本",true)
-about:Slider("视角缩放距离", "Slider",  128, 128, 10000, false, function(Value)
+about:Slider("視覺缩放距离", "Slider",  128, 128, 10000, false, function(Value)
     game:GetService("Players").LocalPlayer.CameraMaxZoomDistance = Value
 end)
 -- 自动v4
 
-local toggleKey = "自动v4"
+local toggleKey = "自動v4"
 local autoV4Task = nil
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
@@ -173,7 +173,7 @@ end
 Module.FastAttack = (function()
 	if _ENV.rz_FastAttack then return _ENV.rz_FastAttack end
 	local FastAttack = {
-		Distance = 2500,
+		Distance = 5000,
 		attackMobs = true,
 		attackPlayers = true,
 		Equipped = nil,
@@ -274,15 +274,15 @@ attackTab:Toggle("开关", "FastAttackToggle", _G.FastAttack, function(state)
 	end
 end)
 
-attackTab:Textbox("范围", "AttackRange", "2500", function(text)
-	local num = tonumber(text) or 2500
-	num = math.floor(math.clamp(num, 1, 2500))
+attackTab:Textbox("范围", "AttackRange", "5000", function(text)
+	local num = tonumber(text) or 5000
+	num = math.floor(math.clamp(num, 1, 5000))
 	if _ENV.rz_FastAttack then
 		_ENV.rz_FastAttack.Distance = num
 	end
 end)
 
-attackTab:Textbox("攻速", "ClickDelay", "0.3", function(text)
+attackTab:Textbox("攻速", "ClickDelay", "0.05", function(text)
 	local num = tonumber(text) or 0.3
 	num = math.round(math.clamp(num, 0.05, 2) * 100) / 100
 	Settings.ClickDelay = num
