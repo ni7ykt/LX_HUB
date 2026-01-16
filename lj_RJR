@@ -99,11 +99,11 @@ end)
 -- 缝合
 
 about:Button("飞行",function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/kismile236/rjrym/refs/heads/main/fly.lua"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/ni7ykt/RGB-FLY/refs/heads/main/l))()
 end)
 
 about:Button("法天象地",function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/kismile36/rjrzhongxing/refs/heads/main/rjr/fatianxiangdi"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/ni7ykt/RGB-FLY/refs/heads/main/oa"))()
 end)
 
 about:Button("fps优化（无法关闭）",function()
@@ -312,7 +312,7 @@ task.spawn(function()
 					local Remotes, Net, RegisterAttack, RegisterHit, Enemies = CheckAndGetCoreComponents()
 					Module.FastAttack = Module.FastAttack or (function()
 						local FastAttack = {
-							Distance=2500,
+							Distance=5000,
 							attackMobs=true,
 							attackPlayers=true,
 							Equipped=nil,
