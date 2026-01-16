@@ -173,7 +173,7 @@ end
 Module.FastAttack = (function()
 	if _ENV.rz_FastAttack then return _ENV.rz_FastAttack end
 	local FastAttack = {
-		Distance = 5000,
+		Distance = 2500,
 		attackMobs = true,
 		attackPlayers = true,
 		Equipped = nil,
@@ -274,9 +274,9 @@ attackTab:Toggle("开关", "FastAttackToggle", _G.FastAttack, function(state)
 	end
 end)
 
-attackTab:Textbox("范围", "AttackRange", "5000", function(text)
-	local num = tonumber(text) or 5000
-	num = math.floor(math.clamp(num, 1, 5000))
+attackTab:Textbox("范围", "AttackRange", "2500", function(text)
+	local num = tonumber(text) or 2500
+	num = math.floor(math.clamp(num, 1, 2500))
 	if _ENV.rz_FastAttack then
 		_ENV.rz_FastAttack.Distance = num
 	end
